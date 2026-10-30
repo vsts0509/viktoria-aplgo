@@ -1873,3 +1873,32 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-04 .ход { padding-top: 10px; }
     #экран-04 .действие { margin-top: 28px; }
   }
+
+/* экран 05 */
+#экран-05.тёмный { background: linear-gradient(155deg, var(--цвет-тёмный-фон) 0%, var(--цвет-тёмный-фон-2) 50%,
+      color-mix(in srgb, var(--цвет-тёмный-фон-2) 70%, var(--цвет-тёплый)) 100%); }
+  #экран-05.светлый { background: var(--цвет-фон-2); }
+  #экран-05 .плита { padding: 24px; border-radius: var(--радиус-малый); background: var(--цвет-тёплый); text-align: center; }
+  #экран-05 .плита h2 { margin: 0; color: var(--цвет-тёмный-фон); }
+  #экран-05 .пункты { display: grid; gap: 24px; margin-top: 32px; }
+  #экран-05 .пункт { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; align-items: start; }
+  #экран-05 .значок { display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--радиус);
+      background: var(--цвет-тёплый); color: var(--цвет-тёмный-фон); }
+  #экран-05 .значок .иконка { width: 28px; height: 28px; color: inherit; }
+  #экран-05 .пункт b { display: block; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
+  #экран-05 .пункт p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
+  #экран-05 .итог { margin: 32px 0 0; padding: 20px 24px; border-radius: var(--радиус-малый); border: var(--нить) solid var(--тёплый-ключа);
+      font-size: var(--кегль-лид); color: var(--текст-ключа); text-align: center; }
+  #экран-05 .итог b { font-weight: 700; }
+  @media (min-width: 900px) {
+    #экран-05 .плита { padding: 28px 40px; }
+    #экран-05 .пункты { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 40px; margin-top: 48px; }
+    #экран-05 .итог { margin-top: 44px; padding: 24px 32px; }
+  }
+
+  @media (min-width: 900px) and (max-height: 720px) {
+    #экран-05 { padding-block: 28px; }
+    #экран-05 .плита { padding: 12px 32px; }
+    #экран-05 .пункты { margin-top: 20px; gap: 18px 32px; }
+    #экран-05 .итог { margin-top: 18px; padding: 12px 24px; }
+  }
