@@ -1857,16 +1857,19 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04 .шаг-н { display: block; font-size: var(--кегль-h2); font-weight: 400; line-height: 1.15; color: var(--тёплый-ключа); }
   #экран-04 .ход b { display: block; margin-top: 8px; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
   #экран-04 .ход p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
+
+  #экран-04 .действие { display: grid; justify-items: center; margin-top: 40px; background: transparent; }
+
+  @media (max-width: 899px) { #экран-04 .действие { display: none; } }
   @media (min-width: 900px) {
     #экран-04 h2 { margin-bottom: 56px; }
-    #экран-04 .шаги { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px 40px; }
+    #экран-04 .шаги { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+    #экран-04 .действие { margin-top: 56px; }
   }
 
   @media (min-width: 900px) and (max-height: 720px) {
     #экран-04 { padding-block: 32px; }
-    #экран-04 h2 { margin-bottom: 20px; }
-    #экран-04 .шаги { gap: 20px 40px; }
+    #экран-04 h2 { margin-bottom: 24px; }
     #экран-04 .ход { padding-top: 10px; }
-    #экран-04 .шаг-н { font-size: var(--кегль-цифра); }
-    #экран-04 .ход b { margin-top: 4px; }
+    #экран-04 .действие { margin-top: 28px; }
   }
