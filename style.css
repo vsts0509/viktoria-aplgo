@@ -1920,6 +1920,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 06 */
 #экран-06 .разворот { display: grid; gap: 28px; }
   #экран-06 .портрет { width: 100%; max-width: 420px; margin: 0 auto; border-radius: var(--радиус-карточки); overflow: hidden; box-shadow: var(--тень-чип); }
+  #экран-06 .портрет img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
   #экран-06 .портрет .заглушка-картинки { width: 100%; min-height: 0; aspect-ratio: 4 / 5; }
   #экран-06 h2 { margin: 0 0 6px; }
   #экран-06 .кто { margin: 0 0 18px; font-size: var(--кегль-лид); font-weight: 600; color: var(--тёплый-ключа); }
