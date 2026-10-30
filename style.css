@@ -1794,7 +1794,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-02 .круги { display: grid; gap: 32px; justify-items: center; text-align: center; }
   #экран-02 .узнал { display: grid; gap: 14px; justify-items: center; max-width: 320px; }
   #экран-02 .узнал b { display: block; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
-  #экран-02 .узнал p { margin: 4px 0 0; font-size: var(--кегль-текст); color: color-mix(in srgb, var(--текст-ключа) 78%, transparent); }
+  #экран-02 .узнал p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
   #экран-02 .круг { width: 136px; height: 136px; margin: 0; border-radius: 50%; overflow: hidden; box-shadow: var(--тень-чип); }
   #экран-02 .круг .заглушка-картинки { width: 100%; height: 100%; min-height: 0; aspect-ratio: 1; letter-spacing: 0; }
   #экран-02 .малые { display: grid; gap: 12px; margin-top: 40px; }
@@ -1804,7 +1804,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
       background: var(--цвет-тёплый); color: var(--цвет-тёмный-фон); }
   #экран-02 .значок .иконка { width: 28px; height: 28px; color: inherit; }
   #экран-02 .малая b { display: block; font-size: var(--кегль-текст); font-weight: 600; color: var(--текст-ключа); }
-  #экран-02 .малая p { margin: 2px 0 0; font-size: var(--кегль-текст); color: color-mix(in srgb, var(--текст-ключа) 78%, transparent); }
+  #экран-02 .малая p { margin: 2px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
   @media (min-width: 900px) {
     #экран-02 h2 { margin-bottom: 56px; }
     #экран-02 .круги { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; align-items: start; }
@@ -1821,4 +1821,49 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-02 .узнал:nth-child(2) { margin-top: 16px; }
     #экран-02 .круг { width: 104px; height: 104px; }
     #экран-02 .малые { margin-top: 20px; }
+  }
+
+/* экран 03 */
+#экран-03.тёмный { background: linear-gradient(155deg, var(--цвет-тёмный-фон) 0%, var(--цвет-тёмный-фон-2) 50%,
+      color-mix(in srgb, var(--цвет-тёмный-фон-2) 70%, var(--цвет-тёплый)) 100%); }
+  #экран-03.светлый { background: var(--цвет-фон-2); }
+  #экран-03 .поле { display: grid; gap: 28px; }
+  #экран-03 .плита { padding: 28px 24px; border-radius: var(--радиус-малый); background: var(--цвет-тёплый); }
+  #экран-03 .плита h2 { margin: 0; color: var(--цвет-тёмный-фон); }
+  #экран-03 .пункт { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; align-items: start; }
+  #экран-03 .значок { display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--радиус);
+      background: var(--цвет-тёплый); color: var(--цвет-тёмный-фон); }
+  #экран-03 .значок .иконка { width: 28px; height: 28px; color: inherit; }
+  #экран-03 .пункт b { display: block; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
+  #экран-03 .пункт p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
+  @media (min-width: 900px) {
+    #экран-03 .поле { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 64px; align-items: center; }
+    #экран-03 .плита { padding: 40px; }
+  }
+
+  @media (min-width: 900px) and (max-height: 720px) {
+    #экран-03 { padding-block: 32px; }
+    #экран-03 .поле { gap: 24px 64px; }
+    #экран-03 .плита { padding: 24px 32px; }
+  }
+
+/* экран 04 */
+#экран-04 h2 { margin: 0 0 40px; text-align: center; }
+  #экран-04 .шаги { list-style: none; margin: 0; padding: 0; display: grid; gap: 28px; }
+  #экран-04 .ход { margin: 0; padding-top: 16px; border-top: var(--нить) solid var(--цвет-тёплый); }
+  #экран-04 .шаг-н { display: block; font-size: var(--кегль-h2); font-weight: 400; line-height: 1.15; color: var(--тёплый-ключа); }
+  #экран-04 .ход b { display: block; margin-top: 8px; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
+  #экран-04 .ход p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
+  @media (min-width: 900px) {
+    #экран-04 h2 { margin-bottom: 56px; }
+    #экран-04 .шаги { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px 40px; }
+  }
+
+  @media (min-width: 900px) and (max-height: 720px) {
+    #экран-04 { padding-block: 32px; }
+    #экран-04 h2 { margin-bottom: 20px; }
+    #экран-04 .шаги { gap: 20px 40px; }
+    #экран-04 .ход { padding-top: 10px; }
+    #экран-04 .шаг-н { font-size: var(--кегль-цифра); }
+    #экран-04 .ход b { margin-top: 4px; }
   }
