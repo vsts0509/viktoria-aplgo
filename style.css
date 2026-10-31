@@ -1768,6 +1768,12 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   .блок.первый-экран--разворот .первый-экран__регалии { padding-block: .6em; bottom: .75em; }
 }
 
+.стык { --стык-высота: 1.75rem; --тон-стыка: color-mix(in oklab, var(--цвет-тёмный-фон-2) 50%, var(--цвет-фон));
+  background: linear-gradient(var(--стык-к), var(--тон-стыка),
+    color-mix(in oklab, var(--тон-стыка) 66%, transparent) 25%,
+    color-mix(in oklab, var(--тон-стыка) 34%, transparent) 50%,
+    color-mix(in oklab, var(--тон-стыка) 11%, transparent) 76%, transparent); }
+
 @media (min-width: 900px) {
   section.блок:not(.блок--первый-экран) { min-height: min(100vh, 67.5rem); min-height: min(100svh, 67.5rem);
     display: grid; align-content: center; }
@@ -1845,7 +1851,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
       color-mix(in srgb, var(--цвет-тёмный-фон-2) 70%, var(--цвет-тёплый)) 100%); }
   #экран-03.светлый { background: var(--цвет-фон-2); }
   #экран-03 .поле { display: grid; gap: 28px; }
-  #экран-03 .плита { padding: 28px 24px; border-radius: var(--радиус-малый); background: var(--цвет-тёплый); }
+  #экран-03 .плита { padding: 28px 24px; border-radius: var(--кнопка-радиус); background: var(--цвет-тёплый); }
   #экран-03 .плита h2 { margin: 0; color: var(--цвет-тёмный-фон); }
   #экран-03 .пункт { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; align-items: start; }
   #экран-03 .значок { display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--радиус);
@@ -1892,7 +1898,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 #экран-05.тёмный { background: linear-gradient(155deg, var(--цвет-тёмный-фон) 0%, var(--цвет-тёмный-фон-2) 50%,
       color-mix(in srgb, var(--цвет-тёмный-фон-2) 70%, var(--цвет-тёплый)) 100%); }
   #экран-05.светлый { background: var(--цвет-фон-2); }
-  #экран-05 .плита { padding: 24px; border-radius: var(--радиус-малый); background: var(--цвет-тёплый); text-align: center; }
+  #экран-05 .плита { padding: 24px; border-radius: var(--кнопка-радиус); background: var(--цвет-тёплый); text-align: center; }
   #экран-05 .плита h2 { margin: 0; color: var(--цвет-тёмный-фон); }
   #экран-05 .пункты { display: grid; gap: 24px; margin-top: 32px; }
   #экран-05 .пункт { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; align-items: start; }
@@ -1901,7 +1907,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .значок .иконка { width: 28px; height: 28px; color: inherit; }
   #экран-05 .пункт b { display: block; font-size: var(--кегль-лид); font-weight: 700; color: var(--текст-ключа); }
   #экран-05 .пункт p { margin: 4px 0 0; font-size: var(--кегль-текст); color: var(--текст-ключа); }
-  #экран-05 .итог { margin: 32px 0 0; padding: 20px 24px; border-radius: var(--радиус-малый); border: var(--нить) solid var(--тёплый-ключа);
+  #экран-05 .итог { margin: 32px 0 0; padding: 20px 24px; border-radius: var(--кнопка-радиус); border: var(--нить) solid var(--тёплый-ключа);
       font-size: var(--кегль-лид); color: var(--текст-ключа); text-align: center; }
   #экран-05 .итог b { font-weight: 700; }
   @media (min-width: 900px) {
@@ -1944,7 +1950,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 #экран-07.тёмный { background: linear-gradient(155deg, var(--цвет-тёмный-фон) 0%, var(--цвет-тёмный-фон-2) 50%,
       color-mix(in srgb, var(--цвет-тёмный-фон-2) 70%, var(--цвет-тёплый)) 100%); }
   #экран-07.светлый { background: var(--цвет-фон-2); }
-  #экран-07 .плита { padding: 24px; border-radius: var(--радиус-малый); background: var(--цвет-тёплый); text-align: center; }
+  #экран-07 .плита { padding: 24px; border-radius: var(--кнопка-радиус); background: var(--цвет-тёплый); text-align: center; }
   #экран-07 .плита h2 { margin: 0; color: var(--цвет-тёмный-фон); }
   #экран-07 .шаг { display: grid; justify-items: center; gap: 20px; margin-top: 28px; text-align: center; }
   #экран-07 .шаг .лид { max-width: 640px; margin: 0; color: var(--текст-ключа); }
